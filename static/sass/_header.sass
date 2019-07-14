@@ -1,0 +1,118 @@
+.header
+  padding: 20px 0
+  &-logo
+    display: inline
+    color: #ff7c73
+    font-family: "Cooper Hewitt"
+    font-size: 20px
+    font-weight: 700
+    font-family: "Segoe UI"
+    text-transform: uppercase
+    margin-right: 55px
+  &-item
+    display: inline
+    text-align: center
+    color: #000000
+    font-family: "Segoe UI"
+    font-size: 18px
+    font-weight: 600
+    position: relative
+    a
+      text-decoration: none
+      color: #000000
+      font-family: "Segoe UI"
+      font-size: 18px
+      font-weight: 600
+    &_f::before
+      display: block
+      position: absolute
+      top: 50%
+      left: -25px
+      content: ''
+      width: 16px
+      height: 16px
+      background: url(../img/figure.png) center no-repeat
+      transform: translate(0, -50%)
+  &-search
+    width: 300px
+    padding: 7px 15px
+    background-color: #EDF3FC
+    color: #B9D1F2
+    font-family: "Segoe UI"
+    font-size: 18px
+    font-weight: 400
+    border: 1px solid transparent
+    &::placeholder
+      color: #B9D1F2
+      font-size: 18px
+  &-button
+    border: 1px solid transparent
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.16)
+    background-color: #4a89dc
+    padding: 10px
+    font-family: "Segoe UI"
+    font-size: 18px
+    font-weight: 400
+    text-decoration: none
+    color: #ffffff
+    transition: .3s
+    &_tr
+      color: #4a89dc
+      font-family: "Segoe UI"
+      font-size: 18px
+      font-weight: 400
+      text-decoration: none
+      padding: 10px
+      border: 2px solid #4a89dc
+      margin-right: 10px
+      transition: .3s
+      &:hover
+        background: #4A89DC
+        color: #fff
+  &-slider
+    padding: 50px 0
+    &_bottom
+      &-box
+        position: absolute
+        top: 50%
+        left: 20px
+        transform: translate(0, -50%)
+      &__item
+        color: #000000
+        font-family: "Segoe UI"
+        font-size: 28px
+        font-weight: 400
+        margin: 10px
+      .slick-current
+        color: #4a89dc
+        font-size: 36px
+        font-weight: 600
+    &_title
+      color: #000000
+      font-family: "Segoe UI"
+      font-size: 56px
+      font-weight: 600
+      line-height: 70px
+      margin-bottom: 20px
+    &_descr
+      color: #000000
+      font-family: "Segoe UI"
+      font-size: 30px
+      font-weight: 400
+      line-height: 45px
+      margin-bottom: 20px
+    &_btn
+      width: 100%
+      padding: 10px 70px
+      margin: 0 auto
+      background: none
+      border: 2px solid #4a89dc
+      color: #4a89dc
+      font-family: "Segoe UI"
+      font-size: 20px
+      font-weight: 400
+      cursor: pointer
+      transition: .3s
+      &:hover
+        background: #4A89DC
+        color: #fff

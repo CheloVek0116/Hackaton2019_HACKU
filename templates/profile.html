@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="{% static 'css/reset.css' %}">
+	<link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/slick.css' %}">
+	<link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font.css' %}">
+	<title>index</title>
+</head>
+<body>
+	<div class="profile-menu">
+		<div class="header-logo">логотип</div>
+		<ul class="profile-menu_list">
+			<li><a class="icon icon_2" href="#">Прогресс</a></li>
+			<li><a class="icon icon_3" href="#">Прогресс</a></li>
+			<li><a class="icon icon_4" href="#">Курсы</a></li>
+			<li><a class="icon icon_5" href="#">Экзамены</a></li>
+			<li><a class="icon icon_6" href="#">Настройки</a></li>
+		</ul>
+	</div>
+	<main class="profile">
+			<div class="container">
+				<div class="row">
+					<div class="col-4">
+						<img class="profile-main_img" src="{% static 'img/Макс_big.png' %}" alt="">
+					</div>
+					<div class="col">
+						<h1 class="profile-main_title">
+							{{ prof.first_name }}
+							{{ prof.last_name }}
+
+						</h1>
+						<h3 class="profile-main_adress">
+							Сахалинская область, Южно-Сахалинск
+						</h3>
+						<h4 class="profile-main_course">Студент 1 курса</h4>
+						<h5 class="profile-main_specialty">СПЕЦИАЛЬНОСТИ</h5>
+					</div>
+				</div>
+				<div class="profile-main_btns">
+					<div class="row align-items-center">
+						<div class="col-4">
+							<button class="profile-main_btn">Оформить резюме</button>
+							<button class="profile-main_btn_tr">Запросить документ</button>
+						</div>
+						<div class="col">
+							<button class="profile-main_btn_big">Разработка программно-информационных систем</button>
+							<button class="profile-main_btn_small">Управление проектами</button>
+							<button class="profile-main_btn_small">Гражданское право</button>
+						</div>
+					</div>
+				</div>
+			</div>
+	</main>
+
+	<footer class="footer_profile">
+		<div class="container">
+			<p>Еще 384 балла для перехода на II курс</p>
+		</div>
+	</footer>
+</body>
+</html>

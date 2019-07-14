@@ -1,0 +1,176 @@
+.profile
+  margin-left: 250px
+  &-menu
+    position: absolute
+    padding: 50px 20px
+    width: 250px
+    height: 100%
+    left: 0
+    background-color: #404050
+    .header-logo
+      margin-left: 50px
+    &_list
+      margin-top: 100px
+      li
+        margin-bottom: 50px
+        position: relative
+        a
+          color: #ffffff
+          font-family: "Segoe UI"
+          font-size: 22px
+          font-weight: 400
+          line-height: 27px
+          text-decoration: none
+          padding-left: 50px
+  &-top
+    padding: 50px 0
+    &_search
+      width: 100%
+      background-color: #EDF3FC
+      color: #B4CEF1
+      font-family: "Segoe UI"
+      font-size: 22px
+      font-weight: 400
+      padding: 15px 20px
+      border: none
+      &::placeholder
+        color: #B4CEF1
+    &_notifications
+      background: url(../img/icon1.png) no-repeat center
+      width: 58px
+      height: 58px
+    &_profile
+      width: 58px
+      height: 58px
+      border-radius: 160px
+      border: 2px solid #4a89dc
+      background: url(../img/Макс.png) no-repeat center
+      position: relative
+      &__active, &__offline
+        &::before
+          content: ''
+          position: absolute
+          width: 20px
+          height: 20px
+          background-color: #11f82e
+          border-radius: 50%
+          bottom: 0
+          right: 0
+      &__offline::before
+        color: #ccc
+  &-main
+    &_img
+    &_btns
+      padding-top: 30px
+    &_btn
+      box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.16)
+      border: 1px solid #4a89dc
+      background-color: #4a89dc
+      color: #ffffff
+      font-family: "Segoe UI"
+      font-size: 31px
+      font-weight: 400
+      line-height: 27px
+      padding: 15px 20px
+      margin-bottom: 30px
+      &_tr
+        padding: 15px 20px
+        color: #4a89dc
+        font-family: "Segoe UI"
+        font-size: 31px
+        font-weight: 400
+        line-height: 27px
+        border: 2px solid #4a89dc
+        background: #fff
+        padding: 15px 20px
+        margin-bottom: 30px
+      &_big
+        border: 2px solid #ff7c73
+        background-color: #ff7c73
+        color: #ffffff
+        font-family: "Segoe UI"
+        font-size: 21px
+        font-weight: 400
+        padding: 15px 20px
+        margin-bottom: 30px
+      &_small
+        background: #fff
+        border: 2px solid #4a89dc
+        color: #4a89dc
+        font-family: "Segoe UI"
+        font-size: 21px
+        font-weight: 400
+        padding: 15px 20px
+        margin-bottom: 30px
+        margin-right: 10px
+    &_title
+      color: #000000
+      font-family: "Segoe UI"
+      font-size: 56px
+      font-weight: 600
+      line-height: 65px
+    &_adress
+      opacity: 0.5
+      color: #000000
+      font-family: "Segoe UI"
+      font-size: 30px
+      font-weight: 300
+      line-height: 45px
+      margin-bottom: 10px
+    &_course
+      color: #000000
+      font-family: "Segoe UI"
+      font-size: 48px
+      font-weight: 400
+      line-height: 55px
+      margin-bottom: 10px
+    &_specialty
+      opacity: 0.5
+      color: #000000
+      font-family: "Segoe UI"
+      font-size: 25px
+      font-weight: 400
+      line-height: 43px
+.icon
+  &::before
+    position: absolute
+    content: ''
+    width: 30px
+    height: 30px
+    top: 0
+    left: 0
+.icon_2::before
+  background: url(../img/icon2.png) no-repeat center
+.icon_3::before
+  background: url(../img/icon3.png) no-repeat center
+.icon_4::before
+  background: url(../img/icon4.png) no-repeat center
+.icon_5::before
+  background: url(../img/icon5.svg) no-repeat center
+.icon_6::before
+  background: url(../img/icon6.svg) no-repeat center
+
+.footer_profile
+  position: absolute
+  top: calc(100vh - 70px)
+  padding: 20px 0
+  width: 100%
+  height: 70px
+  background-color: #223762
+  z-index: -1
+  p
+    color: #ffffff
+    font-family: "Segoe UI"
+    font-size: 22px
+    font-weight: 300
+    line-height: 31px
+    float: right
+  &::before
+    position: absolute
+    content: ''
+    width: 150px
+    height: 100%
+    left: 250px
+    top: 0
+    background-image: linear-gradient(270deg, #4a89dc 0%, #3b4fa8 100%)
+    z-index: -1
