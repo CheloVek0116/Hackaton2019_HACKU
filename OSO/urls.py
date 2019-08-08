@@ -21,7 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('profile/', include('CustomUsers.urls')),
     path('stats/', include('statistic.urls')),
-    path('api/', include('rest_framework.urls')),
 
     path('', views.preview),
 
